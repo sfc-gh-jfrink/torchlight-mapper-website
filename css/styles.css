@@ -303,9 +303,12 @@ h3 {
 
 /* ---------- Legal / prose pages ---------- */
 
+/* Longhand vertical padding only: the shorthand would reset the horizontal padding that `.wrap`
+   supplies, and every prose page carries both classes, so legal text would run to the screen edge. */
 .prose {
     max-width: 76ch;
-    padding: 56px 0 72px;
+    padding-top: 56px;
+    padding-bottom: 72px;
     border-bottom: none;
 }
 
