@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Torchlight Mapper</title>
+<meta name="description" content="Why Torchlight Mapper exists: a player-side mapping app built by the guy at the table who kept running out of graph paper.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="index.html"><span class="flame">&#x1F525;</span> Torchlight Mapper</a>
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html" aria-current="page">About</a>
+            <a href="support.html">Support</a>
+            <a href="privacy-policy.html">Privacy</a>
+            <a href="terms-of-use.html">Terms</a>
+        </nav>
+    </div>
+</header>
+
+<main class="wrap prose">
+
+<h1>About Torchlight Mapper</h1>
+<p class="effective">A mapping app for the player holding the graph paper.</p>
+
+<h2>Why I built it</h2>
+<p>
+    Playing with my friends, I was assigned to be the map maker of the group. It is a genuinely fun
+    job. You are the one turning &ldquo;a corridor runs about thirty feet north and then turns
+    east&rdquo; into something the whole table can look at, and you are the reason nobody walks into
+    the same collapsed hallway twice.
+</p>
+<p>
+    But I would always run out of paper. A dungeon never respects the edge of a sheet, so I would end
+    up taping another page onto the north side, then another onto the east, until the map was a
+    creased patchwork that did not survive being folded into a backpack.
+</p>
+<p>
+    And then there was sharing it. If I could not make the next session, the map could not either
+    &mdash; it was wherever the paper was. Same problem in reverse when somebody else missed a night
+    and wanted to see what the party had found. There was no good way to hand the map to another
+    player.
+</p>
+<p>
+    Torchlight Mapper is my answer to both problems. The grid never runs out, so the dungeon can
+    sprawl in every direction and go down as many floors as it wants. Nothing gets creased or lost.
+    And when someone cannot make it, you send them the file.
+</p>
+
+<h2>It is a player-side tool</h2>
+<p>
+    This is worth stating plainly, because most tabletop software is aimed at the person running the
+    game. Torchlight Mapper is not. It is built for the player at the table who is drawing the map of
+    the caves, caverns, castles, and dungeons the party is exploring, in real time, from what is being
+    described out loud.
+</p>
+<p>
+    That focus shows up all over the app:
+</p>
+<ul>
+    <li>Rooms auto-place against the last thing you drew, because you are keeping up with narration,
+        not designing a level at your leisure.</li>
+    <li>Corridors are painted with a finger and rubber-band automatically when you learn a room was
+        actually bigger than you thought.</li>
+    <li>Rooms lock by default, so a shaky hand pans the map instead of dragging your dungeon apart.</li>
+    <li>Everything is undoable, including group moves, and you can shake to undo when your hands are
+        full of dice.</li>
+    <li>Notes and an adventure log live with the map, so &ldquo;the lever we never pulled&rdquo; is
+        searchable three sessions later.</li>
+    <li>There is a torch timer, because in the kind of game this was built for, light is a resource
+        somebody has to track.</li>
+</ul>
+
+<h2>What it deliberately is not</h2>
+<p>
+    Torchlight Mapper is a mapping tool and nothing else. It contains no game rules, no stat blocks,
+    no spells, no monsters, no adventure text, and no publisher artwork, and it is not affiliated with
+    or endorsed by any game publisher. It draws on a 5-foot square grid, which fits most
+    dungeon-crawling systems, and stays out of the way of whatever you are actually playing.
+</p>
+<p>
+    It also has no account, no server, no analytics, and no ads. It makes no network requests at all.
+    That is partly a privacy stance and partly practical: the room you play in may well have terrible
+    reception, and the app should not care. See the
+    <a href="privacy-policy.html">Privacy Policy</a> for specifics.
+</p>
+
+<h2>Who makes it</h2>
+<p>
+    Torchlight Mapper is built and maintained by me, James Frink, as an independent individual
+    developer. It is free, there is no company behind it, and there is no roadmap committee &mdash;
+    just a player who wanted a better map. If something is broken or missing, telling me is the whole
+    process: <a href="mailto:jkfrink@icloud.com">jkfrink@icloud.com</a>.
+</p>
+
+<h2>Built with</h2>
+<p>
+    Native SwiftUI and SwiftData for iPhone and iPad, iOS 18 and later. No third-party SDKs. All
+    rendering, geometry, and export are done on device.
+</p>
+
+</main>
+
+<footer class="site-footer">
+    <div class="wrap">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="support.html">Support</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="mailto:jkfrink@icloud.com">jkfrink@icloud.com</a>
+        </div>
+        <p>&copy; 2026 James Frink. Torchlight Mapper is an independent app.</p>
+    </div>
+</footer>
+
+</body>
+</html>
