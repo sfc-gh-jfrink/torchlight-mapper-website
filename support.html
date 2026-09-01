@@ -115,12 +115,26 @@
         permanently. Export or share anything you would be upset to lose.
     </dd>
 
-    <dt>Why can't I move a room?</dt>
+    <dt>Why can't I move a room or a corridor?</dt>
     <dd>
-        It is probably locked. Auto-placed rooms are locked by default so a stray drag pans the map
-        instead of shifting your dungeon. Unlock it with the Lock toggle in the toolbar or from the
-        room's info panel. Also note that an unlocked room has to be selected first: the first drag
-        selects it, the second moves it.
+        It is probably locked. Rooms and corridors are both locked by default so a stray drag pans
+        the map instead of shifting your dungeon. Unlock it with the Lock toggle in the toolbar; for
+        a room you can also use the Lock switch in its info panel. Also note that an unlocked room or
+        corridor has to be selected first: the first drag selects it, the second moves it.
+    </dd>
+
+    <dt>A locked corridor stretched anyway when I moved a room. Is that a bug?</dt>
+    <dd>
+        No, that one is deliberate. The lock only stops you from dragging the corridor itself. A
+        corridor joined to a room still follows and stretches when that room moves or resizes,
+        because a corridor that stayed put would tear away from the wall it is attached to.
+    </dd>
+
+    <dt>I selected several elements and the group won't move.</dt>
+    <dd>
+        One of them is still locked. A group move needs every selected room and corridor unlocked,
+        and it refuses the whole move rather than leaving part of the selection behind. Tap Unlock in
+        the selection banner to unlock all of them at once; leaving the selection locks them again.
     </dd>
 
     <dt>The map spun sideways. How do I get north back?</dt>
