@@ -18,7 +18,7 @@ support.html          Contact, bug-report guidance, FAQ  -> App Store Support UR
 privacy-policy.html   Privacy Policy                     -> App Store Privacy Policy URL
 terms-of-use.html     Terms of Use / EULA
 css/styles.css        Torchlight dark theme
-images/               Screenshots captured from the iPhone and iPad simulators
+images/               Screenshots, generated from the app (see "Screenshots" below)
 .nojekyll             Serve files verbatim; skip Jekyll processing
 ```
 
@@ -53,7 +53,33 @@ Keep these in sync when the app changes:
 - **Privacy Policy** whenever the app's data handling changes at all, and bump its
   effective date. It must continue to match the app's App Store privacy label and
   its `PrivacyInfo.xcprivacy` manifest.
-- **Screenshots** in `images/` after a visual redesign.
+- **Screenshots** in `images/` — regenerate them rather than editing them; see below.
+
+## Screenshots
+
+Every file in `images/` is produced by a UI test in the app repository, not
+captured by hand:
+
+```bash
+# in the app repo
+bash Scripts/capture-website-screenshots.sh
+cp screenshots/website/*.png ../torchlight-mapper-website/images/
+```
+
+That suite (`UITests/WebsiteScreenshotUITests.swift`) names each attachment after
+the file it becomes here, so the capture step fails if an image this page
+references stopped being produced. It runs the iPhone shots on an iPhone 16 Pro
+Max and the iPad shot on an iPad Pro 13-inch, pins the dark appearance to match
+this site, and downscales to the widths the page expects (800px, and 1100px for
+`hero-ipad.png`).
+
+**Do not hand-copy screenshots into this folder.** The first image set was
+assembled that way and rotted invisibly: by the time anyone compared it to the
+app, the page was advertising four tools that had been removed (Corridor,
+Freehand, Fog, Optimize) and its iPad shot still showed a sidebar that had been
+deleted months earlier. A copied PNG has no relationship to the code, so nothing
+can notice when it goes stale. A generated one is only ever as old as the last
+run.
 
 ## Preview before pushing
 
