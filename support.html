@@ -90,8 +90,9 @@
     <dt>How do I get a map to another player?</dt>
     <dd>
         Export the dungeon as a <code>.torchlight</code> file and send it through the share sheet
-        &mdash; Messages, AirDrop, Mail, Files, anything you have installed. When they tap the file,
-        it opens in Torchlight Mapper. If they already have that same dungeon, the app shows a visual
+        &mdash; Messages, AirDrop, Mail, Files, anything you have installed. To open it, they tap
+        Share on the file and choose Torchlight Mapper; in the Files app, a plain tap only previews
+        the file. If they already have that same dungeon, the app shows a visual
         diff of what changed before they choose <strong>Overwrite Current Map</strong> or
         <strong>Import as Copy (Keeps Current Map)</strong>. Overwriting backs up the existing map
         on the device first.
@@ -137,6 +138,32 @@
         One of them is still locked. A group move needs every selected room and corridor unlocked,
         and it refuses the whole move rather than leaving part of the selection behind. Tap Unlock in
         the selection banner to unlock all of them at once; leaving the selection locks them again.
+    </dd>
+
+    <dt>What are the question marks on my map?</dt>
+    <dd>
+        Places the party has not explored yet: a door that opens onto unmapped space, a corridor that
+        ends without reaching a room, and stairs not linked to another level. Tap the
+        &ldquo;unexplored&rdquo; count on the map to list them all and jump to one. Painting past one,
+        or linking the stairs, clears it on its own. If a door or corridor really goes nowhere, tap
+        its question mark and mark it as a dead end. The question marks stay out of PDF and PNG
+        exports; place an Unexplored item if you want one to print.
+    </dd>
+
+    <dt>How do I write up what happened in a session?</dt>
+    <dd>
+        Open the adventure log and tap Recap. The app drafts an entry that follows your party marker
+        from room to room, with each room's note and what you found there, and lists what is still
+        unexplored. Edit it before you save. Recaps come from moving the party marker, so drag it as
+        the party moves.
+    </dd>
+
+    <dt>A corridor's doorway moved when I moved a room. How do I keep it?</dt>
+    <dd>
+        When you move a room, its corridor's doorways move to the walls where the two rooms face each
+        other, so the corridor takes the short way. Tap Keep doors on the banner that appears to put
+        them back and pin them; a pinned doorway shows a pin. Tap Move doors on a later move to unpin
+        it. You can also pin a doorway in the corridor's Info.
     </dd>
 
     <dt>The map spun sideways. How do I get north back?</dt>
